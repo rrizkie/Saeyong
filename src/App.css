@@ -292,10 +292,19 @@
   margin-left: 7px;
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+}
+
 @media (max-width: 768px) {
-  .root {
+  /* .root {
     max-width: 415px;
-  }
+  } */
   .container {
     width: auto;
   }
@@ -378,17 +387,21 @@
   }
 
   .mission-list {
-    font-size: 14px;
+    /* font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: 0.02em;
     margin-top: -25px;
+    padding: 0 25px; */
+    padding: 30px 30px;
+    margin-top: -70px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .box-3-container ol li {
     width: 275px;
     height: auto;
-    left: 37px;
     margin: 15px 0;
   }
 
@@ -400,8 +413,10 @@
     flex-wrap: wrap-reverse;
   }
 
-  .team-text {
+  .box-4-container .team-text {
     padding: 30px 10px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .team-container {
@@ -436,14 +451,23 @@
   }
   .info {
     flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .contact {
     margin-left: 0;
     margin-top: 20px;
   }
+  .contact div {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .footer-container img {
     width: 219px;
     height: auto;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }

@@ -77,7 +77,13 @@ const App = () => {
             <div>
               <img src={about} alt="about" className="box-image" />
             </div>
-            <div style={{ marginLeft: "15px", marginBottom: "10px",padding:"0 20px" }}>
+            <div
+              style={{
+                marginLeft: "15px",
+                marginBottom: "10px",
+                padding: "0 20px",
+              }}
+            >
               <div>
                 <h5 className="title">About Us</h5>
               </div>
@@ -275,18 +281,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            fontSize: "14px",
-            lineHeight: "25px",
-          }}
-        >
-          Copyright Saeyong 2021
-        </div>
+        <div className="copyright">Copyright Saeyong 2021</div>
       </div>
     </div>
   );
