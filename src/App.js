@@ -304,8 +304,8 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="copyright">Copyright Saeyong 2021</div>
       </div>
+      <div className="copyright">Copyright Saeyong 2021</div>
     </div>
   );
 };
