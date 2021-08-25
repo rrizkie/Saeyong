@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { Modal } from "@material-ui/core";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
@@ -26,7 +27,13 @@ const ContactModal = ({ visible, close }) => {
               10220
               <br />
               <br />
-              <a href="#">Check on Maps</a>
+              <a
+                // eslint-disable-next-line react/jsx-no-target-blank
+                target="_blank"
+                href="https://www.google.com/maps/search/Sudirman+Sahid+Office+LG+No.+6+Jl.+Jendral+Sudirman+No.+68+Jakarta+Pusat,+DKI+Jakarta+10220/@-6.2105074,106.8167436,17z/data=!3m1!4b1"
+              >
+                Check on Maps
+              </a>
             </text>
           </div>
           <div className="divider-modal"></div>

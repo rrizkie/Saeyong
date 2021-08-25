@@ -50,7 +50,9 @@ const App = () => {
               </a>
             </li>
             <li className="divider">|</li>
-            <li className="list">Contact</li>
+            <li className="list" onClick={() => setIsvisible(true)}>
+              Contact
+            </li>
           </ul>
         </div>
       </div>
