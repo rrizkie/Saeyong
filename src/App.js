@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Typography } from "@material-ui/core";
 import { Mail, Phone } from "@material-ui/icons";
 import logo from "./assets/logo.png";
@@ -12,8 +12,11 @@ import kurniawan from "./assets/Kurniawan.jpg";
 import iswanto from "./assets/Iswanto.jpg";
 import ramadi from "./assets/Ramadi.jpg";
 import "./app.css";
+import ContactModal from "./modal";
 
 const App = () => {
+  const [isVisible, setIsvisible] = useState(false);
+
   return (
     <div className="root">
       <div className="navbar">
@@ -29,41 +32,48 @@ const App = () => {
           }}
         >
           <ul className="menu">
-            <li className="list">Home</li>
+            <li className="list">
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="#banner"
+              >
+                Home
+              </a>
+            </li>
             <li className="divider">|</li>
-            <li className="list">Our Team</li>
+            <li className="list">
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="#team"
+              >
+                Our Team
+              </a>
+            </li>
             <li className="divider">|</li>
             <li className="list">Contact</li>
           </ul>
         </div>
       </div>
 
-      <div className="banner">
-        <div className="text">
-          <Typography
-            style={{
-              fontSize: "64px",
-              letterSpacing: "-0.03em",
-              lineHeight: "74px",
-            }}
-          >
-            National Company
-            <br />
-            with Global Quality
-          </Typography>
-          <Typography
-            style={{
-              fontSize: "18px",
-              letterSpacing: "0.02em",
-              lineHeight: "24px",
-            }}
-          >
-            We provice excellent service on supply chain <br />
-            management in oil and gas industry
-          </Typography>
-          <button className="button">Get to Know Us</button>
-        </div>
+      <div id="banner" className="banner"></div>
+
+      <div className="text">
+        <Typography className="text-1">
+          National Company
+          <br />
+          with Global Quality
+        </Typography>
+        <Typography className="text-2">
+          We provice excellent service on supply chain <br />
+          management in oil and gas industry
+        </Typography>
+        <button className="button" onClick={() => setIsvisible(true)}>
+          Get to Know Us
+        </button>
       </div>
+
+      <ContactModal visible={isVisible} close={() => setIsvisible(false)} />
+
       <div
         style={{
           display: "flex",
@@ -72,7 +82,7 @@ const App = () => {
           flexDirection: "column",
         }}
       >
-        <div className="box">
+        <div id="about" className="box">
           <div className="content-container">
             <div>
               <img src={about} alt="about" className="box-image" />
@@ -84,7 +94,12 @@ const App = () => {
                 padding: "0 20px",
               }}
             >
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  textAlign: "left",
+                }}
+              >
                 <h5 className="title">About Us</h5>
               </div>
               <Typography className="vision">
@@ -122,7 +137,12 @@ const App = () => {
 
         <div className="box-2">
           <div className="box-container">
-            <div>
+            <div
+              style={{
+                display: "flex",
+                textAlign: "left",
+              }}
+            >
               <h5 className="title">Corporate Value</h5>
             </div>
             <div className="value-container">
@@ -158,13 +178,14 @@ const App = () => {
 
         <div className="box-3">
           <div className="box-3-container">
-            <div style={{ marginRight: "10px" }}>
+            <div className="mission-container">
               <div
                 style={{
                   display: "flex",
                   textAlign: "left",
-                  marginLeft: "31.15px",
+                  marginLeft: "28.15px",
                 }}
+                className="text-mission-container"
               >
                 <h5 className="title">Our Missions</h5>
               </div>
@@ -193,7 +214,7 @@ const App = () => {
           </div>
         </div>
 
-        <div className="box-4">
+        <div id="team" className="box-4">
           <div>
             <div
               style={{
@@ -258,7 +279,7 @@ const App = () => {
               </text>
               <br />
               <br />
-              <text style={{ width: "316px" }}>
+              <text>
                 Sudirman Office
                 <br />
                 Jl.Jendral Sudirman no.68

@@ -23,6 +23,11 @@
   margin: 0 20px;
 }
 
+.list li a {
+  text-decoration: none;
+  color: red;
+}
+
 .divider {
   color: #078ed1;
   font-size: 25px;
@@ -36,6 +41,19 @@
 .text {
   color: #fff;
   margin-left: 6.25rem;
+  margin-top: -366px;
+}
+
+.text .text-1 {
+  font-size: 64px;
+  letter-spacing: -0.03em;
+  line-height: 74px;
+}
+
+.text .text-2 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 .button {
@@ -56,7 +74,7 @@
   width: 85%;
   height: auto;
   align-items: center;
-  margin-top: -20px;
+  margin-top: 70px;
   margin-bottom: 60px;
   background: #fff;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.06),
@@ -177,12 +195,26 @@
 
 .box-3-container {
   display: flex;
+  justify-content: space-between;
+}
+
+.misson-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-3-container img {
-  width: 718px;
+  width: 100%;
   height: auto;
+  max-width: 718px;
 }
+
+/* .text-mission-container {
+  display: flex;
+  text-align: left;
+  margin-left: 28.15px;
+} */
 
 .mission-list {
   font-size: 18px;
@@ -190,10 +222,11 @@
   font-weight: 400;
   letter-spacing: 0.02em;
   margin-top: -25px;
+  padding-right: 20px;
 }
 
 .box-3-container ol li {
-  width: 442.85px;
+  width: 100%;
   height: auto;
   left: 31.15px;
   margin: 15px 0;
@@ -301,12 +334,12 @@
   line-height: 25px;
 }
 
-@media (max-width: 768px) {
-  /* .root {
-    max-width: 415px;
-  } */
+@media (max-width: 1024px) {
   .container {
     width: auto;
+  }
+  .banner {
+    height: 568px;
   }
   .navbar {
     justify-content: center;
@@ -316,8 +349,28 @@
     display: none;
   }
 
+  .text {
+    margin-left: 2.25rem;
+    margin-top: -520px;
+  }
+
+  .text .text-1 {
+    font-size: 32px;
+    letter-spacing: -0.03em;
+    line-height: 41px;
+    margin-bottom: 190px;
+  }
+
+  .text .text-2 {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    width: 258px;
+  }
+
   .box {
     height: 100%;
+    margin-top: 40px;
   }
 
   .box .content-container {
@@ -327,6 +380,11 @@
   .box-image {
     width: 100%;
     height: auto;
+  }
+
+  .title {
+    align-items: flex-start;
+    text-align: left;
   }
 
   .text-container {
@@ -379,6 +437,12 @@
 
   .box-3-container {
     flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-mission-container {
+    margin-left: 6px !important;
   }
 
   .box-3-container img {
@@ -387,16 +451,11 @@
   }
 
   .mission-list {
-    /* font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    margin-top: -25px;
-    padding: 0 25px; */
-    padding: 30px 30px;
+    padding: 30px 0;
     margin-top: -70px;
     font-size: 14px;
     line-height: 20px;
+    margin-left: 20px;
   }
 
   .box-3-container ol li {
@@ -448,6 +507,8 @@
 
   .footer-container {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .info {
     flex-direction: column;
