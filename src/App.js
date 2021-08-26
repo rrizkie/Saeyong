@@ -66,7 +66,7 @@ const App = () => {
           with Global Quality
         </Typography>
         <Typography className="text-2">
-          We provice excellent service on supply chain <br />
+          We provide excellent service on supply chain <br />
           management in oil and gas industry
         </Typography>
         <button className="button" onClick={() => setIsvisible(true)}>
@@ -92,7 +92,7 @@ const App = () => {
             <div
               style={{
                 marginLeft: "15px",
-                marginBottom: "10px",
+                marginBottom: "20px",
                 padding: "0 20px",
               }}
             >
@@ -282,7 +282,7 @@ const App = () => {
               <br />
               <br />
               <text>
-                Sudirman Office
+                Sahid Sudirman Office LG no. 6
                 <br />
                 Jl.Jendral Sudirman no.68
                 <br />

@@ -18,7 +18,7 @@ const ContactModal = ({ visible, close }) => {
             <text>
               <strong>Office Location</strong>
               <br />
-              Sudirman Sahid Office LG no.6
+              Sahid Sudirman Office LG no.6
               <br />
               Jl.Jendral Sudirman no.68
               <br />
@@ -30,7 +30,7 @@ const ContactModal = ({ visible, close }) => {
               <a
                 // eslint-disable-next-line react/jsx-no-target-blank
                 target="_blank"
-                href="https://www.google.com/maps/search/Sudirman+Sahid+Office+LG+No.+6+Jl.+Jendral+Sudirman+No.+68+Jakarta+Pusat,+DKI+Jakarta+10220/@-6.2105074,106.8167436,17z/data=!3m1!4b1"
+                href="https://www.google.com/maps/place/CEO+SUITE+Sahid+Sudirman+Center/@-6.2107729,106.8163662,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f4026d88f493:0x8ad09c612d1b433c!8m2!3d-6.2107178!4d106.8185531"
               >
                 Check on Maps
               </a>
