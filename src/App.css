@@ -95,7 +95,7 @@
 }
 
 .box-image {
-  /* width: 37.3rem; */
+  width: 512.25px;
   height: 100%;
 }
 /* .text-container {
@@ -160,6 +160,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 50px;
 }
 
 .value-content div {
@@ -184,7 +185,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  width: 298px;
+  width: 250px;
 }
 
 .value-content img {
@@ -284,8 +285,9 @@
 }
 
 .team-container img {
-  width: 252px;
+  width: 15.75rem;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -301,6 +303,9 @@
 
 .footer img {
   /* width: 265px; */
+  /* height: 100%; */
+  width: 265px;
+  height: 114px;
 }
 
 .footer-container {

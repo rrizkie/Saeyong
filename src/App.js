@@ -11,6 +11,7 @@ import discuss from "./assets/Discuss.jpg";
 import kurniawan from "./assets/Kurniawan.jpg";
 import iswanto from "./assets/Iswanto.jpg";
 import ramadi from "./assets/Ramadi.jpg";
+import logox2 from "./assets/logox2.png";
 import "./app.css";
 import ContactModal from "./modal";
 
@@ -171,9 +172,9 @@ const App = () => {
                 <img src={solution} alt="proactive" />
                 <div>
                   <button>Solution</button>
-                  <text>Combat customers problem for solutions.</text>
+                  <text>Figuring out customers problem for solutions.</text>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -269,7 +270,7 @@ const App = () => {
       <div className="footer">
         <div className="footer-container">
           <div className="info">
-            <img src={saeyong} alt="logo" />
+            <img src={logox2} alt="logo" />
             <div>
               <text
                 style={{
